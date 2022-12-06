@@ -1,0 +1,53 @@
+* {
+	margin: 1rem auto;
+}
+
+div,
+p {
+	font-size: 1.5rem;
+}
+input {
+	width: 15rem;
+}
+label {
+	margin-right: 1rem;
+}
+div[title="First Div"] {
+	width: 50rem;
+}
+
+.bgColored-text {
+	background-color: #ee82ee;
+}
+
+/* Y::after{
+	content: "X";
+} */
+.hide-cities {
+	display: none;
+}
+
+.red-texts {
+	color: red;
+}
+
+.pinkerInput {
+	background-color: pink;
+}
+
+.sec-div p {
+	color: darkviolet !important;
+}
+
+.sec-div p {
+	color: sienna;
+}
+
+/* @import url("style_jQ_01_2.css"); */
+
+/* EM is relative to the parent element's
+font size, so if you wish to scale the element's
+size based on its parent's size, use EM. REM is
+relative to the root (HTML) font size, so if you wish
+to scale the element's size based on the root size,
+no matter what the parent size is, use REM. */

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>jQuery Tutorial 01</title>
+		<link rel="stylesheet" href="styles/style_jQ_01.css" />
+		<!-- <link rel="stylesheet" href="styles/style_jQ_01_2.css" /> -->
+		<script src="scripts/jquery-3.6.0.min.js" defer></script>
+		<script src="scripts/script_jQ_01.js" defer></script>
+	</head>
+	<body>
+		<div class="jq-content" title="First Div">
+			This is the heading Title.
+		</div>
+		<div class="jq-content">Hey Man! Are you OK?</div>
+		<div class="jq-content">This is good.</div>
+		<div class="jq-content">I've got this book.</div>
+		<div class="jq-content">
+			She got my <span id="bordered-span">message.</span>
+		</div>
+		<p data-equipments="book">The Great Gatsby</p>
+		<p data-equipments="book">Anna Karenina</p>
+		<p data-equipments="book">Adventures of Huckleberry Finn</p>
+		<p data-equipments="book">David Copperfield</p>
+		<br />
+		<label for="input-name">Name:</label>
+		<input type="text" id="input-name" value="Max" />
+		<br />
+		<label for="input-mail">E-Mail:</label>
+		<input type="email" id="input-mail" value="Max@info.com" />
+		<br />
+		<textarea cols="30" rows="10">Some Comments is here!</textarea>
+		<br />
+		<button id="input-valueChanger">Change the text</button>
+		<button id="input-valueCleaner">Clean the text</button>
+		<br />
+		<p id="another-para" class="numberic-paras">
+			Here we have another paragraph to show you!
+		</p>
+		<p id="clean-para" class="numberic-paras">This is clear!</p>
+		<p id="show-textSorts">
+			<ins>Using Inserted Underline</ins>
+			<mark> - And here we have marked text!</mark>
+			<sup> - Or superscripted text!</sup>
+			<span> - Normal text here</span>
+			<sub> - Maybe subscripted text!</sub>
+			<b> - We should make this text bold</b>
+			<strong> - And make the other strong (means: Important)</strong>
+			<i> - Then we got italic text</i>
+			<em> - Emphsized text is good too!</em>
+			<small> - I like these sort of small and tiny texts</small>
+			<del>Really??? kidding me with this f**king deleted text!</del>
+		</p>
+		<p id="rmClass-text">Here we have a text and remove it Element Class</p>
+		<button id="classRemover-button" onclick="divSelector_3()">
+			Toggle the class
+		</button>
+		<input
+			id="someValue-1"
+			type="text"
+			value="Here is some value!"
+			onfocus="changeBgColor(this)"
+			onblur="changeBgColor(this)"
+		/>
+		<div id="novel-authors">
+			<p>Leo Tolstoy <span>[Book: Anna Karenina]</span></p>
+			<p>F. Scott Fitzgerald <span>[Book: The Great Gatsby]</span></p>
+			<p>
+				Mark Twain <span>[Book: Adventures of Huckleberry Finn]</span>
+			</p>
+			<p>Charles Dickens <span>[Book: David Copperfield]</span></p>
+		</div>
+		<div>
+			<select name="IR-states" id="states-box">
+				<option value="ds" selected>Select the state</option>
+				<option value="TH-ST">Tehran</option>
+				<option value="HR-ST">Hormozgan</option>
+			</select>
+			<select name="IR-cities" id="cities-box">
+				<option value="dc" selected>Select the city</option>
+				<option value="TH-ST" class="all-cities hide-cities">
+					Tehran
+				</option>
+				<option value="TH-ST" class="all-cities hide-cities">
+					Varamin
+				</option>
+				<option value="TH-ST" class="all-cities hide-cities">
+					RobatKarim
+				</option>
+				<option value="HR-ST" class="all-cities hide-cities">
+					BandarAbbas
+				</option>
+				<option value="HR-ST" class="all-cities hide-cities">
+					Roudan
+				</option>
+				<option value="HR-ST" class="all-cities hide-cities">
+					Minab
+				</option>
+			</select>
+		</div>
+		<div class="sec-div">
+			<p>Paragraph in Second Div</p>
+			<p>Paragraph 2 in Second Div</p>
+		</div>
+	</body>
+</html>
+
+<!-- onfocus="xFunction(this)" onblur="" type on inside the elements to check the finctions -->
